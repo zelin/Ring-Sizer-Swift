@@ -1,0 +1,384 @@
+{
+    "data": {
+        "sizes": [
+                  {
+                  "diameter": "9.91",
+                  "usa": "0000",
+                  "australia": "A - 1 ½",
+                  "europe": "-",
+                  "japan": "-"
+                  },
+                  {
+                  "diameter": "10.72",
+                  "usa": "00",
+                  "australia": "A - 1",
+                  "europe": "-",
+                  "japan": "-"
+                  },
+                  {
+                  "diameter": "11.53",
+                  "usa": "-",
+                  "australia": "A - ½",
+                  "europe": "-",
+                  "japan": "-"
+                  },
+                  {
+                  "diameter": "11.95",
+                  "usa": "½",
+                  "australia": "A",
+                  "europe": "-",
+                  "japan": "-"
+                  },
+                  {
+                  "diameter": "12.18",
+                  "usa": "¾",
+                  "australia": "A ½",
+                  "europe": "-",
+                  "japan": "-"
+                  },
+                  {
+                  "diameter": "12.37",
+                  "usa": "1",
+                  "australia": "B",
+                  "europe": "-",
+                  "japan": "1"
+                  },
+                  {
+                  "diameter": "12.60",
+                  "usa": "1 ¼",
+                  "australia": "B ½",
+                  "europe": "-",
+                  "japan": "1 ¼"
+                  },
+                  {
+                  "diameter": "12.78",
+                  "usa": "1 ½",
+                  "australia": "C",
+                  "europe": "-",
+                  "japan": "1 ½"
+                  },
+                  {
+                  "diameter": "13.00",
+                  "usa": "1 ¾",
+                  "australia": "C ½",
+                  "europe": "-",
+                  "japan": "1 ¾"
+                  },
+                  {
+                  "diameter": "13.21",
+                  "usa": "2",
+                  "australia": "D",
+                  "europe": "41 ½",
+                  "japan": "2"
+                  },
+                  {
+                  "diameter": "13.41",
+                  "usa": "2 ¼",
+                  "australia": "D ½",
+                  "europe": "42 ¼",
+                  "japan": "2 ½"
+                  },
+                  {
+                  "diameter": "13.61",
+                  "usa": "2 ½",
+                  "australia": "E",
+                  "europe": "42 ¾",
+                  "japan": "3"
+                  },
+                  {
+                  "diameter": "13.83",
+                  "usa": "2 ¾",
+                  "australia": "E ½",
+                  "europe": "43 ¼",
+                  "japan": "3 ¾"
+                  },
+                  {
+                  "diameter": "14.05",
+                  "usa": "3",
+                  "australia": "F",
+                  "europe": "44",
+                  "japan": "4"
+                  },
+                  {
+                  "diameter": "14.25",
+                  "usa": "3 ¼",
+                  "australia": "F ¾",
+                  "europe": "45",
+                  "japan": "4 ⅔"
+                  },
+                  {
+                  "diameter": "14.45",
+                  "usa": "3 ½",
+                  "australia": "G ¼",
+                  "europe": "45 ¾",
+                  "japan": "5 ½"
+                  },
+                  {
+                  "diameter": "14.65",
+                  "usa": "3 ¾",
+                  "australia": "H",
+                  "europe": "46 ½",
+                  "japan": "6 ½"
+                  },
+                  {
+                  "diameter": "14.86",
+                  "usa": "4",
+                  "australia": "H ½",
+                  "europe": "47 ¼",
+                  "japan": "7"
+                  },
+                  {
+                  "diameter": "15.04",
+                  "usa": "4 ¼",
+                  "australia": "I",
+                  "europe": "47 ¾",
+                  "japan": "7 ½"
+                  },
+                  {
+                  "diameter": "15.27",
+                  "usa": "4 ½",
+                  "australia": "I ½",
+                  "europe": "48 ¼",
+                  "japan": "8"
+                  },
+                  {
+                  "diameter": "15.53",
+                  "usa": "4 ¾",
+                  "australia": "J ¼",
+                  "europe": "49 ¼",
+                  "japan": "8 ⅔"
+                  },
+                  {
+                  "diameter": "15.70",
+                  "usa": "5",
+                  "australia": "J ½",
+                  "europe": "49 ¾",
+                  "japan": "9"
+                  },
+                  {
+                  "diameter": "15.90",
+                  "usa": "5 ¼",
+                  "australia": "K ¼",
+                  "europe": "50 ¾",
+                  "japan": "9 ¾"
+                  },
+                  {
+                  "diameter": "16.10",
+                  "usa": "5 ½",
+                  "australia": "L",
+                  "europe": "51 ¾",
+                  "japan": "10 ½"
+                  },
+                  {
+                  "diameter": "16.30",
+                  "usa": "5 ¾",
+                  "australia": "L ¼",
+                  "europe": "52 ¼",
+                  "japan": "11"
+                  },
+                  {
+                  "diameter": "16.51",
+                  "usa": "6",
+                  "australia": "M",
+                  "europe": "52 ¾",
+                  "japan": "12"
+                  },
+                  {
+                  "diameter": "16.71",
+                  "usa": "6 ¼",
+                  "australia": "M ½",
+                  "europe": "53 ¼",
+                  "japan": "12 ½"
+                  },
+                  {
+                  "diameter": "16.92",
+                  "usa": "6 ½",
+                  "australia": "N",
+                  "europe": "54",
+                  "japan": "13"
+                  },
+                  {
+                  "diameter": "17.13",
+                  "usa": "6 ¾",
+                  "australia": "N ½",
+                  "europe": "54 ¾",
+                  "japan": "13 ½"
+                  },
+                  {
+                  "diameter": "17.35",
+                  "usa": "7",
+                  "australia": "O",
+                  "europe": "55 ¼",
+                  "japan": "14"
+                  },
+                  {
+                  "diameter": "17.45",
+                  "usa": "7 ¼",
+                  "australia": "O ½",
+                  "europe": "56",
+                  "japan": "14 ½"
+                  },
+                  {
+                  "diameter": "17.75",
+                  "usa": "7 ½",
+                  "australia": "P",
+                  "europe": "56 ½",
+                  "japan": "15"
+                  },
+                  {
+                  "diameter": "17.97",
+                  "usa": "7 ¾",
+                  "australia": "P ½",
+                  "europe": "57",
+                  "japan": "15 ½"
+                  },
+                  {
+                  "diameter": "18.19",
+                  "usa": "8",
+                  "australia": "Q",
+                  "europe": "57 ¾",
+                  "japan": "16"
+                  },
+                  {
+                  "diameter": "18.35",
+                  "usa": "8 ¼",
+                  "australia": "Q ½",
+                  "europe": "58",
+                  "japan": "16 ½"
+                  },
+                  {
+                  "diameter": "18.53",
+                  "usa": "8 ½",
+                  "australia": "Q ¾",
+                  "europe": "58 ½",
+                  "japan": "17"
+                  },
+                  {
+                  "diameter": "18.69",
+                  "usa": "8 ¾",
+                  "australia": "R ¼",
+                  "europe": "59 ¼",
+                  "japan": "17 ½"
+                  },
+                  {
+                  "diameter": "18.89",
+                  "usa": "9",
+                  "australia": "R ¾",
+                  "europe": "60",
+                  "japan": "18"
+                  },
+                  {
+                  "diameter": "19.22",
+                  "usa": "9 ¼",
+                  "australia": "S ¼",
+                  "europe": "60 ¾",
+                  "japan": "18 ½"
+                  },
+                  {
+                  "diameter": "19.41",
+                  "usa": "9 ½",
+                  "australia": "S ¾",
+                  "europe": "61 ¼",
+                  "japan": "19"
+                  },
+                  {
+                  "diameter": "19.62",
+                  "usa": "9 ¾",
+                  "australia": "T ¼",
+                  "europe": "61 ¾",
+                  "japan": "19 ¾"
+                  },
+                  {
+                  "diameter": "19.84",
+                  "usa": "10",
+                  "australia": "T ½",
+                  "europe": "62 ¼",
+                  "japan": "20"
+                  },
+                  {
+                  "diameter": "20.02",
+                  "usa": "10 ¼",
+                  "australia": "U",
+                  "europe": "62 ¾",
+                  "japan": "21"
+                  },
+                  {
+                  "diameter": "20.20",
+                  "usa": "10 ½",
+                  "australia": "U ½",
+                  "europe": "62 ⅞",
+                  "japan": "22"
+                  },
+                  {
+                  "diameter": "20.44",
+                  "usa": "10 ¾",
+                  "australia": "V ¼",
+                  "europe": "63 ¾",
+                  "japan": "22 ¾"
+                  },
+                  {
+                  "diameter": "20.68",
+                  "usa": "11",
+                  "australia": "V ½",
+                  "europe": "64 ½",
+                  "japan": "23"
+                  },
+                  {
+                  "diameter": "20.85",
+                  "usa": "11 ¼",
+                  "australia": "W ¼",
+                  "europe": "65 ¼",
+                  "japan": "23 ½"
+                  },
+                  {
+                  "diameter": "21.08",
+                  "usa": "11 ½",
+                  "australia": "W ¾",
+                  "europe": "66",
+                  "japan": "24"
+                  },
+                  {
+                  "diameter": "21.24",
+                  "usa": "11 ¾",
+                  "australia": "X¼",
+                  "europe": "66 ¾",
+                  "japan": "24 ½"
+                  },
+                  {
+                  "diameter": "21.49",
+                  "usa": "12",
+                  "australia": "Y",
+                  "europe": "67 ½",
+                  "japan": "25"
+                  },
+                  {
+                  "diameter": "21.69",
+                  "usa": "12 ¼",
+                  "australia": "Y ½",
+                  "europe": "68 ¼",
+                  "japan": "25 ½"
+                  },
+                  {
+                  "diameter": "21.89",
+                  "usa": "12 ½",
+                  "australia": "Z",
+                  "europe": "68 ¾",
+                  "japan": "26"
+                  },
+                  {
+                  "diameter": "22.10",
+                  "usa": "12 ¾",
+                  "australia": "Z ½",
+                  "europe": "69",
+                  "japan": "26 ½"
+                  },
+                  {
+                  "diameter": "22.33",
+                  "usa": "13",
+                  "australia": "Z + 1",
+                  "europe": "-",
+                  "japan": "27"
+                  }
+                  ]
+    }
+}

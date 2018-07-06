@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D00209420EF6DCE0082835D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D00209320EF6DCE0082835D /* AppDelegate.swift */; };
+		1D00209620EF6DCE0082835D /* RingSizerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D00209520EF6DCE0082835D /* RingSizerController.swift */; };
+		1D00209920EF6DCE0082835D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D00209720EF6DCE0082835D /* Main.storyboard */; };
+		1D00209B20EF6DD00082835D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D00209A20EF6DD00082835D /* Assets.xcassets */; };
+		1D00209E20EF6DD00082835D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D00209C20EF6DD00082835D /* LaunchScreen.storyboard */; };
+		1D0020A920EF6DD00082835D /* RingSizerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0020A820EF6DD00082835D /* RingSizerSwiftTests.swift */; };
+		1D0020B420EF6DD00082835D /* RingSizerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0020B320EF6DD00082835D /* RingSizerSwiftUITests.swift */; };
+		1DD2467920F0B0490082C774 /* RingSizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD2467520F0B0490082C774 /* RingSizer.swift */; };
+		1DD2467A20F0B0490082C774 /* RingSizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD2467620F0B0490082C774 /* RingSizeModel.swift */; };
+		1DD2467B20F0B0490082C774 /* sizes.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DD2467720F0B0490082C774 /* sizes.json */; };
+		1DD2467C20F0B0490082C774 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD2467820F0B0490082C774 /* DeviceType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D0020A520EF6DD00082835D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D00208820EF6DCE0082835D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D00208F20EF6DCE0082835D;
+			remoteInfo = RingSizerSwift;
+		};
+		1D0020B020EF6DD00082835D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D00208820EF6DCE0082835D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D00208F20EF6DCE0082835D;
+			remoteInfo = RingSizerSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D00209020EF6DCE0082835D /* RingSizerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingSizerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D00209320EF6DCE0082835D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D00209520EF6DCE0082835D /* RingSizerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizerController.swift; sourceTree = "<group>"; };
+		1D00209820EF6DCE0082835D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D00209A20EF6DD00082835D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D00209D20EF6DD00082835D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D00209F20EF6DD00082835D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D0020A420EF6DD00082835D /* RingSizerSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RingSizerSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D0020A820EF6DD00082835D /* RingSizerSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizerSwiftTests.swift; sourceTree = "<group>"; };
+		1D0020AA20EF6DD00082835D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D0020AF20EF6DD00082835D /* RingSizerSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RingSizerSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D0020B320EF6DD00082835D /* RingSizerSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizerSwiftUITests.swift; sourceTree = "<group>"; };
+		1D0020B520EF6DD00082835D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DD2467520F0B0490082C774 /* RingSizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingSizer.swift; sourceTree = "<group>"; };
+		1DD2467620F0B0490082C774 /* RingSizeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingSizeModel.swift; sourceTree = "<group>"; };
+		1DD2467720F0B0490082C774 /* sizes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sizes.json; sourceTree = "<group>"; };
+		1DD2467820F0B0490082C774 /* DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D00208D20EF6DCE0082835D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D0020A120EF6DD00082835D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D0020AC20EF6DD00082835D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D00208720EF6DCE0082835D = {
+			isa = PBXGroup;
+			children = (
+				1D00209220EF6DCE0082835D /* RingSizerSwift */,
+				1D0020A720EF6DD00082835D /* RingSizerSwiftTests */,
+				1D0020B220EF6DD00082835D /* RingSizerSwiftUITests */,
+				1D00209120EF6DCE0082835D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D00209120EF6DCE0082835D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D00209020EF6DCE0082835D /* RingSizerSwift.app */,
+				1D0020A420EF6DD00082835D /* RingSizerSwiftTests.xctest */,
+				1D0020AF20EF6DD00082835D /* RingSizerSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D00209220EF6DCE0082835D /* RingSizerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				1DD2467420F0B0490082C774 /* Library */,
+				1D00209320EF6DCE0082835D /* AppDelegate.swift */,
+				1D00209520EF6DCE0082835D /* RingSizerController.swift */,
+				1D00209720EF6DCE0082835D /* Main.storyboard */,
+				1D00209A20EF6DD00082835D /* Assets.xcassets */,
+				1D00209C20EF6DD00082835D /* LaunchScreen.storyboard */,
+				1D00209F20EF6DD00082835D /* Info.plist */,
+			);
+			path = RingSizerSwift;
+			sourceTree = "<group>";
+		};
+		1D0020A720EF6DD00082835D /* RingSizerSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D0020A820EF6DD00082835D /* RingSizerSwiftTests.swift */,
+				1D0020AA20EF6DD00082835D /* Info.plist */,
+			);
+			path = RingSizerSwiftTests;
+			sourceTree = "<group>";
+		};
+		1D0020B220EF6DD00082835D /* RingSizerSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1D0020B320EF6DD00082835D /* RingSizerSwiftUITests.swift */,
+				1D0020B520EF6DD00082835D /* Info.plist */,
+			);
+			path = RingSizerSwiftUITests;
+			sourceTree = "<group>";
+		};
+		1DD2467420F0B0490082C774 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				1DD2467520F0B0490082C774 /* RingSizer.swift */,
+				1DD2467620F0B0490082C774 /* RingSizeModel.swift */,
+				1DD2467720F0B0490082C774 /* sizes.json */,
+				1DD2467820F0B0490082C774 /* DeviceType.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D00208F20EF6DCE0082835D /* RingSizerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D0020B820EF6DD00082835D /* Build configuration list for PBXNativeTarget "RingSizerSwift" */;
+			buildPhases = (
+				1D00208C20EF6DCE0082835D /* Sources */,
+				1D00208D20EF6DCE0082835D /* Frameworks */,
+				1D00208E20EF6DCE0082835D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RingSizerSwift;
+			productName = RingSizerSwift;
+			productReference = 1D00209020EF6DCE0082835D /* RingSizerSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D0020A320EF6DD00082835D /* RingSizerSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D0020BB20EF6DD00082835D /* Build configuration list for PBXNativeTarget "RingSizerSwiftTests" */;
+			buildPhases = (
+				1D0020A020EF6DD00082835D /* Sources */,
+				1D0020A120EF6DD00082835D /* Frameworks */,
+				1D0020A220EF6DD00082835D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D0020A620EF6DD00082835D /* PBXTargetDependency */,
+			);
+			name = RingSizerSwiftTests;
+			productName = RingSizerSwiftTests;
+			productReference = 1D0020A420EF6DD00082835D /* RingSizerSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D0020AE20EF6DD00082835D /* RingSizerSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D0020BE20EF6DD00082835D /* Build configuration list for PBXNativeTarget "RingSizerSwiftUITests" */;
+			buildPhases = (
+				1D0020AB20EF6DD00082835D /* Sources */,
+				1D0020AC20EF6DD00082835D /* Frameworks */,
+				1D0020AD20EF6DD00082835D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D0020B120EF6DD00082835D /* PBXTargetDependency */,
+			);
+			name = RingSizerSwiftUITests;
+			productName = RingSizerSwiftUITests;
+			productReference = 1D0020AF20EF6DD00082835D /* RingSizerSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D00208820EF6DCE0082835D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Neberox Technologies";
+				TargetAttributes = {
+					1D00208F20EF6DCE0082835D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					1D0020A320EF6DD00082835D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 1D00208F20EF6DCE0082835D;
+					};
+					1D0020AE20EF6DD00082835D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 1D00208F20EF6DCE0082835D;
+					};
+				};
+			};
+			buildConfigurationList = 1D00208B20EF6DCE0082835D /* Build configuration list for PBXProject "RingSizerSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D00208720EF6DCE0082835D;
+			productRefGroup = 1D00209120EF6DCE0082835D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D00208F20EF6DCE0082835D /* RingSizerSwift */,
+				1D0020A320EF6DD00082835D /* RingSizerSwiftTests */,
+				1D0020AE20EF6DD00082835D /* RingSizerSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D00208E20EF6DCE0082835D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D00209E20EF6DD00082835D /* LaunchScreen.storyboard in Resources */,
+				1D00209B20EF6DD00082835D /* Assets.xcassets in Resources */,
+				1DD2467B20F0B0490082C774 /* sizes.json in Resources */,
+				1D00209920EF6DCE0082835D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D0020A220EF6DD00082835D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D0020AD20EF6DD00082835D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D00208C20EF6DCE0082835D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D00209620EF6DCE0082835D /* RingSizerController.swift in Sources */,
+				1D00209420EF6DCE0082835D /* AppDelegate.swift in Sources */,
+				1DD2467A20F0B0490082C774 /* RingSizeModel.swift in Sources */,
+				1DD2467C20F0B0490082C774 /* DeviceType.swift in Sources */,
+				1DD2467920F0B0490082C774 /* RingSizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D0020A020EF6DD00082835D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D0020A920EF6DD00082835D /* RingSizerSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D0020AB20EF6DD00082835D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D0020B420EF6DD00082835D /* RingSizerSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D0020A620EF6DD00082835D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D00208F20EF6DCE0082835D /* RingSizerSwift */;
+			targetProxy = 1D0020A520EF6DD00082835D /* PBXContainerItemProxy */;
+		};
+		1D0020B120EF6DD00082835D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D00208F20EF6DCE0082835D /* RingSizerSwift */;
+			targetProxy = 1D0020B020EF6DD00082835D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D00209720EF6DCE0082835D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D00209820EF6DCE0082835D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D00209C20EF6DD00082835D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D00209D20EF6DD00082835D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D0020B620EF6DD00082835D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D0020B720EF6DD00082835D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D0020B920EF6DD00082835D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5X4JQG4QS;
+				INFOPLIST_FILE = RingSizerSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neberox.app.ringsizerswift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D0020BA20EF6DD00082835D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5X4JQG4QS;
+				INFOPLIST_FILE = RingSizerSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neberox.app.ringsizerswift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1D0020BC20EF6DD00082835D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7FETZFYKT5;
+				INFOPLIST_FILE = RingSizerSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neberox.app.RingSizerSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RingSizerSwift.app/RingSizerSwift";
+			};
+			name = Debug;
+		};
+		1D0020BD20EF6DD00082835D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7FETZFYKT5;
+				INFOPLIST_FILE = RingSizerSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neberox.app.RingSizerSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RingSizerSwift.app/RingSizerSwift";
+			};
+			name = Release;
+		};
+		1D0020BF20EF6DD00082835D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7FETZFYKT5;
+				INFOPLIST_FILE = RingSizerSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neberox.app.RingSizerSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RingSizerSwift;
+			};
+			name = Debug;
+		};
+		1D0020C020EF6DD00082835D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7FETZFYKT5;
+				INFOPLIST_FILE = RingSizerSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neberox.app.RingSizerSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RingSizerSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D00208B20EF6DCE0082835D /* Build configuration list for PBXProject "RingSizerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D0020B620EF6DD00082835D /* Debug */,
+				1D0020B720EF6DD00082835D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D0020B820EF6DD00082835D /* Build configuration list for PBXNativeTarget "RingSizerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D0020B920EF6DD00082835D /* Debug */,
+				1D0020BA20EF6DD00082835D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D0020BB20EF6DD00082835D /* Build configuration list for PBXNativeTarget "RingSizerSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D0020BC20EF6DD00082835D /* Debug */,
+				1D0020BD20EF6DD00082835D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D0020BE20EF6DD00082835D /* Build configuration list for PBXNativeTarget "RingSizerSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D0020BF20EF6DD00082835D /* Debug */,
+				1D0020C020EF6DD00082835D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D00208820EF6DCE0082835D /* Project object */;
+}
