@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RingSizerSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBq-k7-K9F" customClass="RingSizer" customModule="RingSizerSwift" customModuleProvider="target">
+                                <rect key="frame" x="50" y="60" width="275" height="275"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.43529411759999997" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OBq-k7-K9F" secondAttribute="height" multiplier="1:1" id="dBl-67-A4b"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="t8k-21-5Y5">
+                                <rect key="frame" x="48" y="355" width="279" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChangedWithSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="baA-PK-yPV"/>
+                                </connections>
+                            </slider>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tg4-SL-bRs">
+                                <rect key="frame" x="0.0" y="393" width="375" height="274"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ringIdentifier" id="rFX-gX-j5J">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rFX-gX-j5J" id="hWS-3Q-Les">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="13E-J2-IWQ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VJ7-0A-Yvs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OBq-k7-K9F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Mx1-Tc-B0Z"/>
+                            <constraint firstItem="t8k-21-5Y5" firstAttribute="top" secondItem="OBq-k7-K9F" secondAttribute="bottom" constant="20" id="OKO-DU-Glh"/>
+                            <constraint firstItem="t8k-21-5Y5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="S61-Aa-DKi"/>
+                            <constraint firstItem="Tg4-SL-bRs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="a7e-31-tHx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OBq-k7-K9F" secondAttribute="trailing" constant="50" id="cts-PF-ifZ"/>
+                            <constraint firstItem="Tg4-SL-bRs" firstAttribute="top" secondItem="t8k-21-5Y5" secondAttribute="bottom" constant="8" id="e9d-6g-2LL"/>
+                            <constraint firstItem="OBq-k7-K9F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gC4-Hb-JUk"/>
+                            <constraint firstItem="OBq-k7-K9F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="gdJ-0m-7Hc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t8k-21-5Y5" secondAttribute="trailing" constant="50" id="ito-jv-hIa"/>
+                            <constraint firstItem="Tg4-SL-bRs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oka-Hi-FaS"/>
+                            <constraint firstItem="Tg4-SL-bRs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ueH-FZ-laG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myTable" destination="Tg4-SL-bRs" id="CQy-TA-jAt"/>
+                        <outlet property="ringSizer" destination="OBq-k7-K9F" id="Sar-cr-PV6"/>
+                        <outlet property="slider" destination="t8k-21-5Y5" id="InT-dl-nfl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
