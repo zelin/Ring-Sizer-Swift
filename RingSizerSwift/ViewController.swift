@@ -17,10 +17,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet var myTable : UITableView!;
     
     var ringSizes : NSMutableArray = NSMutableArray.init()
+    
+    @IBOutlet var inches : UITextField!
+    @IBOutlet var width  : UITextField!
+    @IBOutlet var height : UITextField!
+
+    @IBOutlet var result : UILabel!
+
+    @IBAction func calculate()
+    {
+        let inch : CGFloat = NumberFormatter().number(from: self.inches.text!) as! CGFloat
+        let d : CGFloat = inch * 25.4;  // 1 mm into millimeter
+        let m : CGFloat  = NumberFormatter().number(from: width.text!) as! CGFloat;
+        let n : CGFloat  = NumberFormatter().number(from: height.text!) as! CGFloat;
+        let x : CGFloat  = (d * m)/(sqrt( (m * m) + (n * n)))
+        let y : CGFloat  = ( x * n ) / m
+        print(x)
+        print(y)
+        result.text = String.init(format: "%.6f", x)
+    }
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        // main formula =
+    
         
         if let filePath = Bundle.main.path(forResource: "sizes", ofType: "json")
         {

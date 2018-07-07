@@ -38,9 +38,6 @@ class RingSizer : UIView
     override init(frame: CGRect)
     {
         super.init(frame: frame)
-        
-        let device : UIDevice = UIDevice.current;
-        
         self.addSubview(self.textLabel)
     }
     
@@ -62,8 +59,9 @@ class RingSizer : UIView
     
     override func draw(_ rect: CGRect)
     {
+        MM_CONSTANT = UIDevice().pointConversion
         let radius : CGFloat = self.diameter/2.0;
-        let distance : CGFloat = (radius / MM_CONSTANT) / 2.0;
+        let distance : CGFloat = (radius / MM_CONSTANT);
         
         let midX : CGFloat = rect.size.width  / 2;
         let midY : CGFloat = rect.size.height / 2;
