@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D00209420EF6DCE0082835D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D00209320EF6DCE0082835D /* AppDelegate.swift */; };
-		1D00209620EF6DCE0082835D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D00209520EF6DCE0082835D /* ViewController.swift */; };
+		1D00209620EF6DCE0082835D /* RingSizerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D00209520EF6DCE0082835D /* RingSizerController.swift */; };
 		1D00209920EF6DCE0082835D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D00209720EF6DCE0082835D /* Main.storyboard */; };
 		1D00209B20EF6DD00082835D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D00209A20EF6DD00082835D /* Assets.xcassets */; };
 		1D00209E20EF6DD00082835D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D00209C20EF6DD00082835D /* LaunchScreen.storyboard */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		1D00209020EF6DCE0082835D /* RingSizerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingSizerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D00209320EF6DCE0082835D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D00209520EF6DCE0082835D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D00209520EF6DCE0082835D /* RingSizerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizerController.swift; sourceTree = "<group>"; };
 		1D00209820EF6DCE0082835D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D00209A20EF6DD00082835D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D00209D20EF6DD00082835D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			children = (
 				1DD2467420F0B0490082C774 /* Library */,
 				1D00209320EF6DCE0082835D /* AppDelegate.swift */,
-				1D00209520EF6DCE0082835D /* ViewController.swift */,
+				1D00209520EF6DCE0082835D /* RingSizerController.swift */,
 				1D00209720EF6DCE0082835D /* Main.storyboard */,
 				1D00209A20EF6DD00082835D /* Assets.xcassets */,
 				1D00209C20EF6DD00082835D /* LaunchScreen.storyboard */,
@@ -277,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D00209620EF6DCE0082835D /* ViewController.swift in Sources */,
+				1D00209620EF6DCE0082835D /* RingSizerController.swift in Sources */,
 				1D00209420EF6DCE0082835D /* AppDelegate.swift in Sources */,
 				1DD2467A20F0B0490082C774 /* RingSizeModel.swift in Sources */,
 				1DD2467C20F0B0490082C774 /* DeviceType.swift in Sources */,
