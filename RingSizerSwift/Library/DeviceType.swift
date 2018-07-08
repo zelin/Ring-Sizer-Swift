@@ -67,25 +67,12 @@ public extension UIDevice
     {
         let mType : Model = Model.iPhone6S //type;
         // mm / screen width
-        if mType == .iPod1 {
-            return 0.1558282
-        }else if mType == .iPod2 {
-            return 0.1558282
-        }else if mType == .iPod3 {
-            return 0.1558282
-        }else if mType == .iPod4 {
-            return 0
-        }else if mType == .iPod5 {
-            return 0
-        }else if mType == .iPad2 {
-            return 0
+        if mType == .iPad2 {
+            return 147.828/768 // 9.7 inch  1024 by 768
         }else if mType == .iPad3 {
-            return 0
+            return 147.828/768 // 9.7 inch 1536 x 2048
         }else if mType == .iPad4 {
-            return 0
-            
-            
-            
+            return 147.828/768 // 9.7 inch 1536 x 2048
         }else if mType == .iPhone4 {
             return 49.31285/320// 4 inch
         }else if mType == .iPhone4S {
@@ -116,29 +103,28 @@ public extension UIDevice
             return 58.505164/375
         }else if mType == .iPhoneX {
             return 61.766984/375 // 5.8 inch
-
         }else if mType == .iPadMini1 {
-            return 0
+            return 120.396/768 //  7.9 inch 1024 x 768
         }else if mType == .iPadMini2 {
-            return 0
+            return 120.396/768 //  7.9 inch 2048×1536
         }else if mType == .iPadMini3 {
-            return 0
+            return 120.396/768 //  7.9 inch 2048×1536
         }else if mType == .iPadAir1 {
-            return 0
+            return 120.396/768 // 9.7 inch 1536 x 2048
         }else if mType == .iPadAir2 {
-            return 0
+            return 120.396/768// 9.7 inch 1536 x 2048
         }else if mType == .iPadPro9_7 {
             return 120.74470/375
         }else if mType == .iPadPro9_7_cell {
             return 120.74470/375
         }else if mType == .iPadPro10_5 {
-            return 0
+            return 160.02/834 // 1112 x 834 10.5
         }else if mType == .iPadPro10_5_cell {
-            return 0
+            return 160.02/834 // 1112 x 834  10.5
         }else if mType == .iPadPro12_9 {
-            return 0
+            return 196.5346/1024 // 1024 x 1366   12.9
         }else if mType == .iPadPro12_9_cell {
-            return 0
+            return 196.5346/1024 // 1024 x 1366 12.9
         }else {
             return 0
         }

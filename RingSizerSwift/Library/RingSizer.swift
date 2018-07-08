@@ -9,31 +9,38 @@ import Foundation
 import UIKit
 import QuartzCore
 
+@IBDesignable
 class RingSizer : UIView
 {
-    let textLabel : UILabel = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: 50, height: 20));
+    // Display ring size in the middle of the circle.
+    let textLabel : UILabel = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: 50, height: 20))
+    // Stroke width of the arrows
+    @IBInspectable var arrowStrokeWidth : CGFloat = 1.0
+    // Stroke width of the lines of the grid
+    @IBInspectable var linesStrokeWidth : CGFloat = 1.0
+    // Stroke width of the circle upon which ring will be placed
+    @IBInspectable var ringStrokeWidth  : CGFloat = 2.0
     
-    @IBInspectable var arrowStrokeWidth : CGFloat = 1.0;
-    @IBInspectable var linesStrokeWidth : CGFloat = 1.0;
-    @IBInspectable var ringStrokeWidth  : CGFloat = 2.0;
-    
-    @IBInspectable var gridAxisStroke : CGFloat = 1.0;
-    @IBInspectable var gridStroke     : CGFloat = 0.3;
-    
-    // Diameter should be in mm
-    @IBInspectable var diameter : CGFloat = 9.91;
-    
-    @IBInspectable var arrowColor  : UIColor = UIColor.blue;
-    @IBInspectable var linesColor  : UIColor = UIColor.gray;
-    @IBInspectable var textColor   : UIColor = UIColor.red;
-    @IBInspectable var textBgColor : UIColor = UIColor.gray;
+    // Diameter of the ring. Should be in mm
+    @IBInspectable var diameter : CGFloat = 9.91
+    // Color of the arrows drawn. To remove arrows set UIColor.clear
+    @IBInspectable var arrowColor  : UIColor = UIColor.gray
+    // Color of the grid lines drawn. To remove arrows set UIColor.clear
+    @IBInspectable var linesColor  : UIColor = UIColor.gray
+    // Color of the text of textLabel.
+    @IBInspectable var textColor   : UIColor = UIColor.black
+    // Color of the background of textLabel.
+    @IBInspectable var textBgColor : UIColor = UIColor.gray
 
-    @IBInspectable var textFont : UIFont = UIFont.systemFont(ofSize: 12);
-    @IBInspectable var textPaddingWidth  : CGFloat = 10;
-    @IBInspectable var textPaddingHeight : CGFloat = 5;
+    // Font of the textLabel. Default is 12 and system Font
+    @IBInspectable var textFont : UIFont = UIFont.systemFont(ofSize: 12)
+    // left and right text Padding to add in textLabel
+    @IBInspectable var textPaddingWidth  : CGFloat = 10
+    // top and bottom text Padding to add in textLabel
+    @IBInspectable var textPaddingHeight : CGFloat = 5
 
     private var labelText : String = "0000"
-    private var MM_CONSTANT : CGFloat = 0.0779
+    private var mmConstant : CGFloat = 0.0779
 
     override init(frame: CGRect)
     {
@@ -46,25 +53,25 @@ class RingSizer : UIView
         super.init(coder: aDecoder)
     }
     
-    func  updateValues() -> Void
+    private func  updateValues() -> Void
     {
-        self.textLabel.textColor = textColor;
-        self.textLabel.font = textFont;
+        self.textLabel.textColor = textColor
+        self.textLabel.font = textFont
         self.textLabel.textAlignment = NSTextAlignment.center
-        self.textLabel.backgroundColor = textBgColor;
-        self.textLabel.text = labelText;
-        self.textLabel.layer.cornerRadius = 5.0;
+        self.textLabel.backgroundColor = textBgColor
+        self.textLabel.text = labelText
+        self.textLabel.layer.cornerRadius = 5.0
         self.textLabel.clipsToBounds = true
     }
     
     override func draw(_ rect: CGRect)
     {
-        MM_CONSTANT = UIDevice().pointConversion
-        let radius : CGFloat = self.diameter/2.0;
-        let distance : CGFloat = (radius / MM_CONSTANT);
+        mmConstant = UIDevice().pointConversion
+        let radius : CGFloat = self.diameter/2.0
+        let distance : CGFloat = (radius / mmConstant)
         
-        let midX : CGFloat = rect.size.width  / 2;
-        let midY : CGFloat = rect.size.height / 2;
+        let midX : CGFloat = rect.size.width  / 2
+        let midY : CGFloat = rect.size.height / 2
         
         if let context = UIGraphicsGetCurrentContext()
         {
@@ -100,9 +107,9 @@ class RingSizer : UIView
             
             self.updateValues()
             
-            self.textLabel.sizeToFit();
+            self.textLabel.sizeToFit()
             self.textLabel.frame = CGRect.init(x: 0, y: 0, width: self.textLabel.frame.size.width + textPaddingWidth, height: self.textLabel.frame.size.height + textPaddingHeight)
-            self.textLabel.center = CGPoint.init(x: midX, y: midY);
+            self.textLabel.center = CGPoint.init(x: midX, y: midY)
             self.textLabel.removeFromSuperview()
             self.addSubview(self.textLabel)
             
@@ -137,10 +144,43 @@ class RingSizer : UIView
         }
     }
     
+    /**
+     *  Function is used to set size of the ring. Diameter should be in mm -- Text can be anything , diameter or ring size
+     *
+     */
     func setSize(diameter: CGFloat, text: String) -> Void
     {
-        self.labelText = text;
-        self.diameter = diameter;
+        self.labelText = text
+        self.diameter = diameter
         self.setNeedsDisplay()
+    }
+    /* Get all ring sizes currently USA, Japan, Europe and Austrailia formats added */
+    func getRingSizes() -> NSMutableArray
+    {
+        let ringSizes = NSMutableArray.init()
+        if let filePath = Bundle.main.path(forResource: "sizes", ofType: "json")
+        {
+            if let data = NSData.init(contentsOfFile: filePath)
+            {
+                if let json = try? JSONSerialization.jsonObject(with: data as Data, options: []) as? [String:AnyObject]
+                {
+                    if let jsonArray = json!["data"]!["sizes"] as? [[String: String]]
+                    {
+                        for jsonObject in jsonArray
+                        {
+                            let ringSizeModel : RingSizeModel = RingSizeModel.init(
+                                diameter: CGFloat((jsonObject["diameter"]! as NSString).floatValue),
+                                usaCode: jsonObject["usa"]!,
+                                ausCode: jsonObject["australia"]!, euroCode: jsonObject["europe"]!, japCode: jsonObject["japan"]!
+                            )
+                            
+                            ringSizes.add(ringSizeModel)
+                        }
+                    }
+                }
+            }
+        }
+        
+        return ringSizes
     }
 }

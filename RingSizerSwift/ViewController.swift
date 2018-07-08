@@ -41,32 +41,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     {
         super.viewDidLoad()
         
-        // main formula =
-    
-        
-        if let filePath = Bundle.main.path(forResource: "sizes", ofType: "json")
-        {
-            if let data = NSData.init(contentsOfFile: filePath)
-            {
-                if let json = try? JSONSerialization.jsonObject(with: data as Data, options: []) as? [String:AnyObject]
-                {
-                    if let jsonArray = json!["data"]!["sizes"] as? [[String: String]]
-                    {
-                        for jsonObject in jsonArray
-                        {
-                            let ringSizeModel : RingSizeModel = RingSizeModel.init(diameter: CGFloat((jsonObject["diameter"]! as NSString).floatValue), usaCode: jsonObject["usa"]!)
-                            
-                            self.ringSizes.add(ringSizeModel)
-                        }
-                    }
-                }
-            }
-        }
-
+        self.ringSizes = self.ringSizer.getRingSizes()
         if self.ringSizes.count > 1
         {
             self.slider.maximumValue = Float.init(self.ringSizes.count - 1)
         }
+        
     }
 
     override func didReceiveMemoryWarning()
